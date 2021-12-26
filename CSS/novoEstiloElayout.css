@@ -1,0 +1,92 @@
+/* layout CWS beta v.0.0.1 */
+/* author - Catarino Grosser Ferreira */
+
+*{box-sizing: border-box; padding: 0; margin: 0;}
+
+nav { position: fixed; height: 11vh; align-items: center; justify-content:center;}
+header { height: 100vh; width: 100%; align-items: center; justify-content:center;}
+footer { align-items: center; justify-content: center; height:10vh; margin: 3% auto;}
+h1,h2,h3,h4,h5,h6 { text-align: center ; padding: 2% 0; margin: 2% 0;}
+img { max-width: 100%;}
+
+/* css reutilizável */
+.linha {display: flex; width: 100%; }
+.caixa { width: 94%; margin: 3% auto; padding: 2%; text-align: center;}
+.coluna2Col { width: 44%; margin: 3%;}
+.coluna3Col { width: 30%; margin: 3% auto;}
+.coluna4Col { width: 19%; margin: 3% auto;}
+.linkMenu { width: max-content; margin: auto; padding: 3px; text-decoration: none;}
+.copyRightLinkCWS { width: max-content; margin: 1% auto; }
+.tituloSecao{height: 20vh; width: 100vw; display: flex; align-items:center; justify-content: center;}
+.fotoProduto { width: 60%;}
+.disable { display: none;}
+.coluna h3 { width: 100%; height: 12vh;}
+
+/* css unico */
+#btnOpenMenu
+{ display: none; width: 10vw; height:auto; background: transparent;
+border: none; font-size: xx-large;}
+#logo { width: 60%; height: max-content; display: flex;}
+#logo h1 { margin: auto;}
+#menu { width: 40%; transition: all 1.3s linear;}
+#contMenu { width: 100%; display: flex;transition: all 1.6s linear;}
+#btnCloseMenu
+{ display: none; width: 10vw; height:auto;background: transparent; border: none; font-size:large;margin:2vh 0 0 2vw;}
+#btnPageWhats{ position: fixed; bottom: 20px; right: 20px; width: 70px; height: 70px;}
+.iconeBTN{width: 100%;}
+#btnContatoWhats{ width: 70px; height: 70px; margin: auto;}
+#btnContatoMail{ width: 50px; height: 50px; margin: auto;overflow:hidden;}
+#btnContatoMail:hover{cursor: pointer;}
+#sec1 {padding:10% 0;}
+
+
+/* estilo CWS */
+body{font-family:Arial, Helvetica, sans-serif;color:rgb(161, 161, 161);background-color: black;
+  font-family:Georgia, 'Times New Roman', Times, serif;font-size: large;
+}
+header
+{background-image: url("../imagens/banner.png");background-size:cover;background-position:center;
+  background-repeat: no-repeat;
+}
+.ativo{ border-bottom: 2px solid gray;}
+
+nav,.cont-pedido-contato{ color:rgb(128, 128, 128); background-color: rgba(0, 0, 0, .7);}
+#btnCloseMenu,.linkMenu,#logo,a{color:rgb(160, 160, 160);}
+
+.coluna,footer{background-color: rgb(57, 57, 57); border-radius: 10px;}
+.slogan,.pedido-contato{background-image:url("../imagens/backGroudSec.png"); background-size:cover;
+  background-position:center; background-repeat: no-repeat; border-radius: 10px; color: rgb(168, 168, 168);
+  overflow: hidden;
+}
+
+.linkProduto { background-color: gray; color: gainsboro;width: max-content; padding: 1%;border-radius: 10px;text-decoration: none;}
+p{margin-bottom: 2vh;}
+
+.secFormacao .coluna{background-color:rgba(75, 75, 75,0.3);}
+
+#btnOpenMenu,#btnCloseMenu {background: transparent; border: none; color: gainsboro;}
+
+/*  */
+
+/* responsivo - consulta de mídias */
+
+@media only screen and (max-width: 900px) {
+ .linha {flex-wrap: wrap;}
+ nav { flex-wrap: nowrap;}
+ #logo { width: 90vw;}
+ #menu { position: absolute;top: 0; z-index: 1; width: 100%; height: 0; overflow: hidden;
+   background-image: url("../imagens/backGroudSec.png");}
+ #contMenu { display: block; width: 0; height: 100vh; overflow: hidden;}
+ .linkMenu { display: block; margin-top: 8vh; font-size: x-large;}
+ #btnOpenMenu, #btnCloseMenu { display:block;}
+ .coluna3Col {width: 47%;}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+ .coluna2Col {width: 94%;}
+ .coluna3Col {width: 94%;}
+ #logo{font-size: small;}
+
+}
