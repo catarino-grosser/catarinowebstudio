@@ -1,0 +1,102 @@
+/* layout CWS beta v.0.0.1 */
+/* author - Catarino Grosser Ferreira */
+
+*{box-sizing: border-box; padding: 0; margin: 0;}
+
+
+nav { position: fixed; height: 11vh; align-items: center; justify-content:center;}
+header { height: 80vh; width: 100%; align-items: center; justify-content:center;}
+footer { align-items: center; justify-content: center; height:25vh; margin: 3% auto 0 auto;}
+h2 { text-align: center ; padding: 2% 0; margin: 2% 0; font-size: xx-large;}
+img { width: 100%;}
+
+/* css reutilizável */
+.linha {display: flex; flex-direction: row;  width: 100%; }
+.caixa { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 94%; margin: 3% auto; padding: 2%; text-align: center;}
+.coluna2Col { width: 50%; margin: 3% auto; display: flex; flex-direction: column ;}
+.coluna3Col { width: 30%; margin: 3% auto; display: flex; flex-direction: column;}
+.coluna4Col { width: 19%; margin: 3% auto; display: flex; flex-direction: column;}
+.col-img { width: 50%; margin: auto;}
+.col-text { width: 50%; margin:0 auto;display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.linkMenu { width: max-content; margin: auto; padding: 3px; text-decoration: none;}
+.copyRightLinkCWS { width: max-content; margin: 1% auto; }
+.tituloSecao{height: 20vh; width: 100%;}
+.fotoProduto { width: 60%;}
+.disable { display: none;}
+.coluna h3 { width: 100%; height: 12vh;}
+.padding {padding: 1rem;}
+
+/* css unico */
+#btnOpenMenu
+{ display: none; width: 10vw; height:auto; background: transparent;
+border: none; font-size: xx-large;}
+#logo { width: 60%; height: max-content; display: flex;}
+#logo h1 { margin: auto;}
+#menu { width: 40%; transition: all 1.3s linear;}
+#contMenu { width: 100%; display: flex;transition: all 1.6s linear;}
+#btnCloseMenu
+{ display: none; width: 10vw; height:auto;background: transparent; border: none; font-size:large;margin:2vh 0 0 2vw;}
+#btnPageWhats{ position: fixed; bottom: 20px; right: 20px; width: 70px; height: 70px;}
+.iconeBTN{width: 100%;}
+#btnContatoWhats{ width: 70px; height: 70px; margin: auto;}
+#btnContatoMail{ width: 50px; height: 50px; margin: auto;overflow:hidden;}
+#btnContatoMail:hover{cursor: pointer;}
+#sec1 {padding:10% 0;}
+#sec2 {width: 94%; margin: 3vh auto;}
+
+
+/* estilo CWS */
+body{font-family:Arial, Helvetica, sans-serif;color:rgb(161, 161, 161);background-color: rgb(0, 0, 0);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: large;
+}
+header
+{background-image: url("../imagens/header-it-f22.jpg");background-size:cover;background-position:center;
+  background-repeat: no-repeat;
+}
+.ativo{ border-bottom: 2px solid rgb(200, 0, 255);}
+
+nav,.cont-pedido-contato{ color:rgb(128, 128, 128); background-color: rgba(0, 0, 0, 1.0);}
+#btnCloseMenu,.linkMenu,#logo,a{color:rgb(160, 160, 160);}
+
+
+.pedido-contato{background-image:url(""); background-size:cover;
+  background-position:center; background-repeat: no-repeat; border-radius: 10px; color: rgb(168, 168, 168);
+  overflow: hidden;
+}
+
+.linkProduto { background-color: gray; color: gainsboro;width: max-content; padding: 1%;border-radius: 10px;text-decoration: none;}
+p {margin-bottom: 2vh; font-size: xx-large;}
+
+ .bgCollor2{background-image: linear-gradient(to right, rgb(64, 0, 120) , rgb(25, 0, 115));}
+
+ .secFormacao .coluna { border:2px solid rgb(138, 43, 226);}
+
+ .boxShadow { box-shadow: 0 4px 8px 0 rgba(138,43, 226, 0.2), 0 6px 20px 0 rgba(138,43, 226, 0.19);}
+
+.bgCollor1 {background-color:rgba(75, 75, 75,0.3);}
+
+#btnOpenMenu,#btnCloseMenu {background: transparent; border: none; color: gainsboro;}
+
+/* responsivo - consulta de mídias */
+
+@media only screen and (max-width: 900px) {
+ .linha {flex-wrap: wrap;}
+ nav { flex-wrap: nowrap;}
+ #logo { width: 90vw;}
+ #menu { position: absolute;top: 0; z-index: 1; width: 100%; height: 0; overflow: hidden;
+  background-image: linear-gradient(to right, rgb(64, 0, 120) , rgb(25, 0, 115));}
+ #contMenu { display: block; width: 0; height: 100vh; overflow: hidden;}
+ .linkMenu { display: block; margin-top: 8vh; font-size: x-large;}
+ #btnOpenMenu, #btnCloseMenu { display:block;}
+ .coluna3Col {width: 47%;}
+  header { height: 70vh;}
+}
+
+@media only screen and (max-width: 600px) {
+
+ .coluna2Col {width: 94%;}
+ .coluna3Col {width: 94%;}
+ #logo{font-size: small;}
+  p { font-size: medium;}
+
+}
