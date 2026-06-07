@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catarino Web Studio | Design e Desenvolvimento Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+    html {
+    scroll-behavior: smooth;
+    }
+
+    .card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+}
+
+        :root { --primary: #2C4A3E; --accent: #C5A059; --dark: #1A1A1A; --light: #F9F9F9; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+
+        /* Header */
+        header { padding: 20px; background: white; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-transform: uppercase; }
+
+        /* Hero */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center;
+            height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            color: white; text-align: center; padding: 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+
+        /* Seções */
+        section { padding: 80px 20px; max-width: 1000px; margin: 0 auto; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 40px; }
+        
+        /* Cartões de Portfólio */
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .card img { width: 100%; border-radius: 5px; margin-bottom: 15px; }
+
+        .btn { background: var(--primary); color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; display: inline-block; }
+        .btn:hover { background: #1e332b; }
+
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+    <header><div class="logo">Catarino Web Studio</div></header>
+
+    <section class="hero">
+        <h1>Transformamos ideias em sites inesquecíveis.</h1>
+        <p>Desenvolvimento web profissional para o seu negócio crescer.</p>
+        <br>
+        <a href="#contato" class="btn">Solicitar Orçamento</a>
+    </section>
+        <section id="servicos" style="background-color: white;">
+        <h2>O que fazemos</h2>
+        <div class="grid">
+            
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 10px;">🎯</div>
+                <h3>Landing Pages</h3>
+                <p style="margin-top: 10px;">Páginas de alta conversão, focadas em um único objetivo: transformar os visitantes do seu site em clientes reais e impulsionar suas vendas.</p>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 10px;">🏢</div>
+                <h3>Sites Institucionais</h3>
+                <p style="margin-top: 10px;">A vitrine digital perfeita para sua empresa. Transmita autoridade, apresente seus serviços e consolide sua marca com um design profissional.</p>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 10px;">📱</div>
+                <h3>Design Responsivo</h3>
+                <p style="margin-top: 10px;">Seu site impecável em qualquer tela. Garantimos uma navegação rápida e fluida tanto no celular quanto no computador.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Nova Seção: Sobre o Studio -->
+    <section id="sobre">
+        <h2>A Essência do Studio</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; margin-top: 40px; text-align: left;">
+            
+            <!-- Imagem Profissional do Studio -->
+            <div style="flex: 1; min-width: 300px;">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Ambiente de desenvolvimento web" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); object-fit: cover;">
+            </div>
+
+            <!-- Texto da Visão do Studio -->
+            <div style="flex: 1; min-width: 300px;">
+                <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">Tecnologia com Propósito</h3>
+                <p style="margin-bottom: 15px;">A <strong>Catarino Web Studio</strong> nasceu da união entre a paixão por tecnologia e o desejo genuíno de resolver problemas reais. Com raízes no aprendizado autodidata contínuo e em sólidas formações pela Fundação Bradesco, nossa essência é movida pela curiosidade e pela busca constante por inovação digital.</p>
+                
+                <p>Acreditamos que nosso objetivo vai muito além de "entregar sites"; nós construímos a verdadeira "casa digital" para o seu negócio. Trabalhamos com a filosofia de que um design atraente e profissional deve caminhar de mãos dadas com a alta performance e usabilidade.</p>
+                
+                <p style="margin-top: 15px;">Cada projeto é desenvolvido de forma artesanal, garantindo que a sua marca tenha uma presença online forte, rápida, segura e, acima de tudo, pronta para gerar grandes resultados.</p>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section id="portfolio">
+        <h2>Nosso Portfólio</h2>
+        <div class="grid">
+            <!-- Card 1: Eco Construções -->
+            <a href="https://catarino-grosser.github.io/Eco-construcoes/" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="ScreenshotsEcoConstrcao.jpg" alt="Eco">
+                    <h3>Eco Construções</h3>
+                    <p>Site institucional focado em confiança e conversão.</p>
+                </div>
+            </a>
+
+            <!-- Card 2: Fernanda Malheiros -->
+            <a href="https://fernandamalheiros.netlify.app/" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="ScreenshotOraculoDoSilencio.jpg" alt="Fernanda">
+                    <h3>Oráculo do Silêncio</h3>
+                    <p>Landing page imersiva para o nicho holístico.</p>
+                </div>
+            </a>
+                        <a href="https://pintandoabiblia.netlify.app/" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="ScreenshotPintandoabiblia.jpg" alt="Pintando a Bíblia">
+                    <h3>Pintando a Bíblia</h3>
+                    <p>Página de vendas focada em conversão para infoproduto do nicho infantil e religioso.</p>
+                </div>
+            </a>
+                        <!-- Card 4: Thi Energy -->
+            <a href="https://thienergy.netlify.app/" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="ScreenshotThiEnergy.jpg" alt="Thi Energy - Eletrotécnico">
+                    <h3>Thi Energy</h3>
+                    <p>Site corporativo moderno e de alta conversão para serviços elétricos, focado em autoridade e responsividade.</p>
+                </div>
+            </a>
+                        <!-- Card 5: Oráculo do Tarot -->
+            <a href="https://app-oraculodotarot.netlify.app" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="ScreenshotOraculoTarot.jpg" alt="Oráculo do Tarot App">
+                    <h3>Oráculo do Tarot</h3>
+                    <p>Aplicação web interativa focada em experiência do usuário, oferecendo consultas digitais personalizadas com interface intuitiva.</p>
+                </div>
+            </a>
+                        <!-- Card 6: Oráculo 9888 -->
+            <a href="https://oraculo9888.netlify.app" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="ScreenshotOraculo9888.jpg" alt="Oráculo 9888">
+                    <h3>Sistema 9888</h3>
+                    <p>Interface web dinâmica focada em respostas rápidas e interatividade para o público do nicho holístico.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="contato" style="background: white;">
+        <h2>Vamos construir seu próximo site?</h2>
+        <p style="margin-bottom: 20px;">Clique abaixo e fale diretamente comigo no WhatsApp.</p>
+        <a href="https://wa.me/5548988662824" target="_blank" class="btn" style="background: #25D366;">Conversar no WhatsApp</a>
+    </section>
+
+    <footer style="background-color: var(--dark); color: white; text-align: center; padding: 40px 20px; margin-top: 40px;">
+        <h3 style="margin-bottom: 15px; font-size: 1.2rem; color: var(--accent);">Catarino Web Studio</h3>
+        
+        <p style="margin-bottom: 8px;">
+            <a href="mailto:catarinowebstudio@gmail.com" style="color: white; text-decoration: none;">✉️ catarinowebstudio@gmail.com</a>
+        </p>
+        <p style="margin-bottom: 25px;">
+            <a href="https://wa.me/5548988662824" target="_blank" style="color: white; text-decoration: none;">📱 (48) 98866-2824</a>
+        </p>
+        
+        <p style="font-size: 0.8rem; color: #aaaaaa;">&copy; 2026 Catarino Web Studio. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+</html>
